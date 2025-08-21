@@ -245,7 +245,7 @@ print("\n--- GroupBy Multiple Columns and Flatten with reset_index() ---")
 grouped = df.groupby(['ProductID', 'OrderQty'])['LineTotal'].sum()
 
 display(grouped)
-print(grouped.info())
+print(grouped)
 
 # Step 2: Flatten the multi-index result using reset_index()
 grouped_flattened = grouped.reset_index()
